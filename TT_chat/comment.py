@@ -1,4 +1,3 @@
-# comment.py
 from TikTokLive import TikTokLiveClient
 from TikTokLive.events import CommentEvent
 

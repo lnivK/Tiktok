@@ -1,4 +1,3 @@
-# gift.py
 from TikTokLive import TikTokLiveClient
 from TikTokLive.events import GiftEvent
 
@@ -16,7 +15,7 @@ def run_gift_client(target_user, on_new_gift, on_update_stats):
         diamonds = diamond_count * count
 
         nickname = event.user.nickname if event.user else "Someone"
-        gift_msg = f"{nickname} sent {count}x {gift_name} (+{diamonds} 💎)"
+        gift_msg = f"{nickname} sent {count}x{gift_name} (+{diamonds}💎)"
         
         # Pass data back to the GUI
         on_new_gift(gift_msg)
